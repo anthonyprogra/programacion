@@ -5,21 +5,19 @@
  */
 package javaapplication14;
 
-
+import java.util.Scanner;
 public class SumaNumeros {
-    
+
     public static void main(String[] args) {
-       //sumando1
-       int a1=10;
-       
-       //sumando2
-       int a2=6;
-       
-       //suma
-       int suma;
-       
-       suma=a1+a2;
-       
-        System.out.println("El resultado es: "+suma);
+        //sumando1
+        System.out.println("Introducir dos numeros enteros");
+        Scanner s=new Scanner(System.in);
+        int a,b,suma;
+        a=s.nextInt();
+        b=s.nextInt();
+        suma=a+b;
+
+        System.out.println("El resultado de sumar " + a+ " y " + b + " es :" + suma);
+        
     }
 }
